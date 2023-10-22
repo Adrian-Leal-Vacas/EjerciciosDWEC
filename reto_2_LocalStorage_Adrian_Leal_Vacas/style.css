@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100vh;*/
+    font-family: Impact, Charcoal, sans-serif;
+    flex-direction: column;
+    gap:10px;
+    background-color: rgb(203, 226, 246);
+    margin: 10px;
+    
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(208, 245, 40);
+  }
+
+  .form-input {
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .form-select {
+    margin-bottom: 10px;
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .form-submit {
+    background-color: #0088cc;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+
+   
+  }
+
+  .div1, 
+  .div2 {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 400px;
+  }
+  .seleccionado {
+    background-color: rgb(66, 171, 66);
+    border: 1px solid darkgreen;
+    font-size: x-large;
+    border-radius: 25px;
+    padding: 10px;
+  
+  }
+  .confirmado {
+    background-color: rgb(85, 135, 151);
+    border: 1px solid rgb(1, 8, 68);
+    border-radius: 25px;
+    padding: 10px;
+    font-size: x-large;
+  
+  }
+  .div1 {
+    background-color: rgb(85, 135, 151);  
+  }
+
+  .div2 {
+    background-color: rgb(66, 171, 66);   
+  }
+  .elementoLista{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+ 
+  .boton-borrado {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  .boton-modificado {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 15px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+
+  @media (max-width:800px){
+    .container {
+        flex-direction: column;
+    }
+    .div1,div2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+  }
